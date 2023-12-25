@@ -55,9 +55,6 @@
     }
 
     &-text {
-      display: flex;
-      align-items: center;
-      gap: 8px;
       text-wrap: balance;
       @include fluid(margin-bottom, 35px, 52px);
       @include fluid(font-size, 16px, 20px);
@@ -73,6 +70,13 @@
 
       &--big {
         @include fluid(font-size, 20px, 24px);
+      }
+
+      &--flex {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
       }
     }
 

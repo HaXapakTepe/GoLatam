@@ -2,22 +2,14 @@
   &__wrapper {
     @include fluid(padding-top, 30px, 75px);
     @include fluid(padding-bottom, 30px, 100px);
-
-    // &--alt {
-    //   @include fluid(padding-top, 30px, 100px);
-    // }
   }
 
   &__title {
     max-width: 700px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     text-wrap: balance;
     @include fluid(margin-bottom, 20px, 76px);
-    gap: 8px;
 
-    span {
+    &-span {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -31,6 +23,13 @@
     &-flag {
       @include fluid(width, 44px, 64px);
       @include fluid(height, 44px, 64px);
+    }
+
+    &--flex {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
     }
   }
 
