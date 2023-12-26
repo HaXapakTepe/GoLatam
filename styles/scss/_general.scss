@@ -42,7 +42,7 @@ body {
 }
 
 body {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 300;
   @include fluid(font-size, 14px, 16px);
   line-height: normal;
